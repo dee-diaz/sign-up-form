@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('Norse-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 64rem;
+  min-height: 100vh;
+  margin-inline: auto;
+  border: 2px solid pink;
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+}
+
+.sidebar {
+  background: url("img/bg-image.webp") no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 8rem;
+  align-items: center;
+}
+
+.credits {
+  margin-bottom: 1.5rem;
+  p, a {
+    color: #FAF9F6;
+    font-size: 0.875rem;
+  }
+}
+
+.odin {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding-block: 1rem;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  img {
+    height: 6rem;
+    object-fit: cover;
+  }
+
+  span {
+    font-family: 'norsebold', sans-serif;
+    font-size: 4.5rem;
+    color: #fff;
+  }
+}
