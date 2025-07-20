@@ -169,3 +169,21 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #4D5F3F;
 }
+
+button[type="submit"] + p {
+  margin-left: 2.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+}
+
+button[type="submit"] + p a:hover {
+  color: #4D5F3F;
+}
